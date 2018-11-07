@@ -11,3 +11,7 @@ The network I built generally followed the approach of "Enhanced Deep Residual N
 The original version of this network with MSE loss is implemented in one notebook, and in the other a version is implemented where the loss function is supplemented with a perceptual loss based on the first three convolutional layers of VGG16. The super resolution volumes are compared from the only MSE-loss network and the MSE + perceptual loss network, and I found that the perceptual loss indeed improves the resolution.
 
 I also used the Fast AI toolbox as well (https://github.com/fastai by Jeremy Howard, Rachel Thomas, et al., a bit like Keras for Pytorch but with so much more), which has a nice data loader tool that comes with easy data augmentation. Fast AI also has a super resolution image demo with a resnet variant that I used as a scaffold for my network, as well as code for perceptual loss with VGG16 that I expanded upon.
+
+## Conclusions
+
+3D convolutional kernels are necessary to take full advantage of the structure of the input data. MSE loss with a typical resnet structure works to a degree, but adding a perceptual component with VGG16 activations further improves the super resolution output
