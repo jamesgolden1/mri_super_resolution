@@ -19,3 +19,5 @@ I also used the Fast AI toolbox as well (https://github.com/fastai by Jeremy How
 ### Note
 
 I still have to post the changes I made to the FastAI data loader to make it work with volumetric data - I will do this shortly on a fork of the fastai repo.
+
+![](volume_animations/mri_p6.gif)
