@@ -4,6 +4,7 @@ A high-resolution MRI dataset from http://old.mridata.org/fullysampled/knees is 
 <p align="center"> 
 <img src="volume_animations/mri_p6.gif">
 </p>
+
 ## General approach
 
 I implemented a resnet-like 3D super resolution network in Pytorch. I generated a training set of 32x32x32 volume blocks from the MRI data for each of the 19 patients, and trained/validated on the first 15 patients and tested on the last 4 patients. The network is fully convolutional, so it can be trained on small volumes and tested on any size volume.
