@@ -1,7 +1,6 @@
 # MRI Super Resolution
 
-A high-resolution MRI dataset from http://old.mridata.org/fullysampled/knees is blurred to simulate fast, low-resolution acquisition. A deep network was trained to carry out super resolution on the blurred volumetric data. There are 19 patients total, and 16 were used for training and validation while the remaining three were used for testing.
-
+A high-resolution MRI dataset from http://old.mridata.org/fullysampled/knees is blurred to simulate fast, low-resolution acquisition. A deep network was trained to carry out super resolution on the blurred volumetric data. There are 19 patients total, and 16 were used for training and validation while the remaining three were used for testing. See other two test cases at bottom.
 <p align="center"> 
 <img src="volume_animations/mri_p6.gif">
 </p>
@@ -24,3 +23,10 @@ I also used the Fast AI toolbox as well (https://github.com/fastai by Jeremy How
 
 I still have to post the changes I made to the FastAI data loader to make it work with volumetric data - I will do this shortly on a fork of the fastai repo.
 
+<p align="center"> 
+<img src="volume_animations/mri_p20.gif">
+</p>
+
+<p align="center"> 
+<img src="volume_animations/mri_p4.gif">
+</p>
