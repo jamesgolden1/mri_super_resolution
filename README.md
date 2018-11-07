@@ -15,3 +15,7 @@ I also used the Fast AI toolbox as well (https://github.com/fastai by Jeremy How
 ## Conclusions
 
 3D convolutional kernels are necessary to take full advantage of the structure of the input data. MSE loss with a typical resnet structure works to a degree, but adding a perceptual component with VGG16 activations further improves the super resolution output
+
+### Note
+
+I still have to post the changes I made to the FastAI data loader to make it work with volumetric data - I will do this shortly on a fork of the fastai repo.
