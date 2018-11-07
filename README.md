@@ -1,11 +1,10 @@
 # MRI Super Resolution
 
 A high-resolution MRI dataset from http://old.mridata.org/fullysampled/knees is blurred to simulate fast, low-resolution acquisition. A deep network was trained to carry out super resolution on the blurred volumetric data. There are 19 patients total, and 16 were used for training and validation while the remaining three were used for testing.
-
 <p align="center"> 
 <img src="volume_animations/mri_p6.gif">
+(More results at bottom)
 </p>
-
 ## General approach
 
 I implemented a resnet-like 3D super resolution network in Pytorch. I generated a training set of 32x32x32 volume blocks from the MRI data for each of the 19 patients, and trained/validated on the first 15 patients and tested on the last 4 patients. The network is fully convolutional, so it can be trained on small volumes and tested on any size volume.
@@ -24,3 +23,10 @@ I also used the Fast AI toolbox as well (https://github.com/fastai by Jeremy How
 
 I still have to post the changes I made to the FastAI data loader to make it work with volumetric data - I will do this shortly on a fork of the fastai repo.
 
+<p align="center"> 
+<img src="volume_animations/mri_p20.gif">
+</p>
+
+<p align="center"> 
+<img src="volume_animations/mri_p4.gif">
+</p>
