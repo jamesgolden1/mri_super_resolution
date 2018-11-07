@@ -2,7 +2,7 @@
 
 A high-resolution MRI dataset from http://old.mridata.org/fullysampled/knees is blurred to simulate fast, low-resolution acquisition. A deep network was trained to carry out super resolution on the blurred volumetric data. There are 19 patients total, and 16 were used for training and validation while the remaining three were used for testing. See other two test cases at bottom.
 <p align="center"> 
-<img src="volume_animations/mri_p6_2.gif">
+<img src="volume_animations/mri_p6.gif">
 </p>
 
 ## General approach
